@@ -30,12 +30,6 @@ const promise1 = new Promise((resolve, reject) => {
   const logoItem = document.querySelector('.logo');
 
   logoItem.addEventListener('click', (e) => {
-    const pushLogo = e.target.closest('.logo');
-
-    if (!pushLogo) {
-      return;
-    }
-
     resolve();
   });
 });
