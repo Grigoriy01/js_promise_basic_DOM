@@ -1,0 +1,2 @@
+var e=document.querySelector("body"),n=function(){e.insertAdjacentHTML("afterbegin",'\n    <div class="message">\n      Promise was resolved!\n    </div>\n  ')},t=function(){e.insertAdjacentHTML("afterbegin",'\n    <div class="message error-message">\n      Promise was rejected!\n    </div>\n  ')},i=new Promise(function(e,n){document.querySelector(".logo").addEventListener("click",function(n){e()})}),o=new Promise(function(e,n){setTimeout(function(){n(Error("Promise timeout"))},3e3)});i.then(n).catch(t),o.then(n).catch(t);
+//# sourceMappingURL=index.cb74a675.js.map
